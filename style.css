@@ -349,6 +349,21 @@
   }
 
   /* ===================== */
+
+  @font-face {
+      font-family: robotofont;
+      src: url(./fonts/robotomono-variablefont_wght-webfont.woff2);
+  }
+
+  @font-face {
+      font-family: robotofontitalic;
+      src: url(./fonts/robotomono-italic-variablefont_wght-webfont.woff2);
+  }
+
+  body {
+    font-family: robotofont, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+
   #layout {
       display: grid;
       width: 100vw;
@@ -362,7 +377,9 @@
       border: 1px solid black;
       grid-column: 1 / 2;
       grid-row: 1 / -1;
-      background-color: rgb(172, 229, 243);
+      background-color: rgb(7, 79, 97);
+      display: grid;
+      grid-template-rows: 0.7fr 3fr 1fr;
   }
 
   #header {
@@ -376,3 +393,66 @@
       grid-column: 2 / -1;
       grid-row: 2 / -1;
   }
+
+  #logo > p {
+      display: flex;
+      align-content: center;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      color: rgb(255, 255, 255);
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: robotofontitalic;
+      gap: 0.2rem;
+  }
+
+
+  #sidebar-section {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+      grid-template-rows: repeat(6, 45px) 100px repeat(3, 45px);
+      align-items: center;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      font-family: roboto;
+      margin-left: 1.3rem;
+  }
+
+  #sidebar-section > img:nth-of-type(7) {
+      grid-row: 8 / 9;
+  }
+
+  #sidebar-section > p:nth-of-type(7) {
+    grid-row: 8 / 9;
+  }
+
+  #sidebar-section > img:nth-of-type(8) {
+    grid-row: 9 / 10;
+  }
+
+  #sidebar-section > p:nth-of-type(8) {
+    grid-row: 9 / 10;
+  }
+
+  #sidebar-section > img:nth-of-type(9) {
+    grid-row: 10 / 11;
+  }
+
+  #sidebar-section > p:nth-of-type(9) {
+    grid-row: 10 / 11;
+  }
+  /* #top-section > div > p {
+      display: grid;
+      color: white;
+      grid-template-columns: 1fr 5fr;
+      align-items: center;
+      margin-left: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+  } */
+/* 
+  #top-section > div > img {
+      justify-self: center;
+      align-self: center;
+  } */
