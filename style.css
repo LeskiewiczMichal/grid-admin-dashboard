@@ -477,7 +477,7 @@
       gap: 1rem;
   }
 
-  #profile-info > p {
+  #profile-info > div > p {
       font-family: robotofontitalic;
       font-weight: bold;
   }
