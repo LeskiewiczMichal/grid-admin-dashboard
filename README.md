@@ -1,7 +1,10 @@
-# grid-admin-dashboard
+# Grid-dashboard
 
 See it here:
 https://leskiewiczmichal.github.io/grid-admin-dashboard/
+
+Social-media like layout made with grid,
+
 
 
 Profile pictures credits: 
